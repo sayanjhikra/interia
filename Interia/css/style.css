@@ -1,0 +1,436 @@
+*,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito", serif;
+  background: #131616;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container-a {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* /////////// variables ////////// */
+:root {
+  --color-a: #fff;
+  --color-b: #6d7d7d;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* ////////////////// custom css //////////////////////// */
+.sec-heading {
+  color: var(--color-a);
+  font-family: "Kanit";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 59.8px;
+}
+.sec-name {
+  color: var(--color-b);
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+  line-height: 23.92px;
+}
+.txt-a {
+  color: var(--color-a);
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+}
+.txt-b {
+  color: var(--color-a);
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+}
+.btn-a {
+  border-radius: 100px;
+  border: 1px solid var(--color-b);
+  color: var(--color-a);
+  padding-inline: 28px;
+  padding-block: 8px;
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+/* bs-5.3 */
+.navbar {
+  padding: 0;
+  padding-top: 32px;
+}
+.navbar .container-fluid {
+  padding: 0;
+}
+.navbar-nav {
+  gap: 55px;
+}
+.navbar-collapse {
+  gap: 52px;
+}
+.nav-link {
+  color: var(--color-a);
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+/* ////////////// Navbar ///////////// */
+/* .navbar{
+  position: fixed;
+  top: 0;
+} */
+
+.logo {
+  color: var(--color-a);
+  font-family: "Kanit";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 6.88px;
+}
+
+/* ////////////// hero-sec ///////////// */
+.home .hero-sec {
+  width: 100%;
+  height: 689px;
+  flex-shrink: 0;
+  background-image: url("../images/herosec-bg.png");
+  background-position: center;
+}
+.hero-sec .txt-b {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  margin-bottom: 32px;
+}
+.hero-sec .txt-a {
+  margin-top: 10px;
+  margin-bottom: 32px;
+}
+
+/* ////////////// about ///////////// */
+.about {
+  width: 100%;
+  background: #191d1d;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+.about .txt-block {
+  margin-bottom: 75px;
+}
+.about .txt-block .sec-heading {
+  margin-bottom: 19px;
+}
+.about .txt-block .txt-a {
+  max-width: 513px;
+}
+
+.about .content-block {
+  gap: 23px;
+}
+.about .content-block .img-block {
+  gap: 23px;
+}
+.about .block-a-a {
+  margin-left: 40px;
+  padding-block: 40px;
+  margin-right: 40px;
+}
+.about .block-a .sub-block {
+  max-width: 125px;
+}
+.about .block-a .sec-heading {
+  color: var(--color-b);
+}
+
+/* ////////////// teams ///////////// */
+
+/* *** promo card *** */
+
+.home .promo-card {
+  margin-top: -150px;
+}
+.promo-card {
+  border-radius: 50px 50px 0px 50px;
+  background: #212828;
+}
+.promo-card img {
+  border-radius: 50px 0px 0px 50px;
+}
+.promo-card .sec-heading {
+  max-width: 519px;
+  margin-bottom: 29px;
+}
+.promo-card .btn-a {
+  padding-inline: 52px;
+}
+
+/* ****** */
+.teams {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.teams .sec-heading {
+  margin-bottom: 27px;
+  max-width: 440px;
+}
+.teams .txt-a {
+  max-width: 440px;
+}
+.teams .review-block {
+  margin-bottom: 75px;
+}
+.teams .review-block .img-box {
+  margin-bottom: 19px;
+}
+.teams .review-block .img-box img {
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
+  border: 3px solid #121616;
+  background-color: #121616;
+  margin-left: -14px;
+}
+.teams .review-block .img-box img:first-child {
+  margin-left: 0;
+}
+.teams .review-block .stars {
+  gap: 6px;
+}
+.teams .img-block {
+  gap: 22px;
+}
+
+.teams .c-logos {
+  margin-top: 75px;
+  gap: 40px;
+}
+
+/* ////////////// info-sec   ///////////// */
+
+.info-sec {
+  gap: 47px;
+  margin-bottom: 100px;
+}
+.info-box {
+  padding-bottom: 47px;
+}
+.info-sec .sub-block {
+  max-width: 412px;
+}
+.info-sec .sub-block .txt-a {
+  margin-bottom: 22px;
+  color: var(--color-b);
+}
+/* ////////////// gallery  ///////////// */
+.gallery img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ////////////// blog  ///////////// */
+.blog {
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background: #191d1d;
+}
+
+.blog .blog-cards {
+  padding-top: 35px;
+  padding-bottom: 100px;
+  margin-bottom: 75px;
+  gap: 26px;
+}
+.blog .blog-card .card-content {
+  padding-inline: 18px;
+}
+.blog .blog-card .card-content .txt-a {
+  color: var(--color-b);
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.blog .newsletter form {
+  gap: 24px;
+}
+.blog .newsletter input {
+  width: 512px;
+  padding-block: 8px;
+  padding-left: 27px;
+  background: transparent;
+  border: none;
+  color: var(--color-a);
+  border-bottom: 1px solid var(--color-b);
+}
+.blog .newsletter input::placeholder {
+  color: var(--color-a);
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+}
+.blog .newsletter button {
+  background: transparent;
+  padding-inline: 48px;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+/* ////////////// footer  ///////////// */
+
+.footer {
+  padding-top: 127px;
+  padding-bottom: 150px;
+}
+.footer .block-a {
+  margin-bottom: 68px;
+  gap: 36px;
+}
+.footer .footer-menu {
+  gap: 55px;
+}
+.footer hr {
+  border-bottom: 1px solid var(--color-b);
+  margin: 0;
+  padding: 0;
+}
+.footer .block-b {
+  margin-top: 100px;
+  gap: 36px;
+}
+.footer .block-b .txt-a {
+  max-width: 479px;
+}
+.footer .social-icons {
+  gap: 20px;
+}
+.footer .s-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 1px solid var(--color-b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* *** copyright *** */
+.copyright-bg {
+  background: #191d1d;
+}
+.copyright {
+  padding-block: 50px;
+  gap: 24px;
+}
+.copyright .block-a {
+  gap: 92px;
+}
+.copyright .block-a .txt-b {
+  color: var(--color-b);
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////// */
+/* ////////////// media-quaries ///////////// */
+@media screen and (max-device-width: 1400px) {
+}
+@media screen and (max-device-width: 1200px) {
+}
+@media screen and (max-device-width: 1140px) {
+  .container-a {
+    padding-inline: 24px;
+  }
+}
+@media screen and (max-device-width: 992px) {
+  .navbar-nav {
+    gap: 0px;
+  }
+
+  .blog .newsletter input {
+    width: auto;
+  }
+}
+@media screen and (max-device-width: 768px) {
+}
+@media screen and (max-device-width: 576px) {
+  .hero-sec .txt-a {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+
+  .about .block-a-a {
+    margin-left: 18px;
+    margin-right: 18px;
+    gap: 20px;
+  }
+
+  .promo-card .sec-heading {
+    font-size: 26px;
+  }
+
+  .teams .img-block {
+    gap: 40px;
+  }
+  .teams .c-logos {
+    margin-top: 45px;
+    gap: 0px;
+  }
+
+  .blog .blog-cards {
+    gap: 70px;
+    padding-bottom: 0px;
+  }
+  .blog .newsletter {
+    gap: 30px;
+  }
+  .blog .newsletter form {
+    gap: 44px;
+  }
+  .blog .newsletter input {
+    width: 100%;
+  }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .footer .block-b {
+    margin-top: 60px;
+    gap: 36px;
+  }
+  .footer .footer-menu {
+    gap: 24px;
+    padding-inline: 34px;
+  }
+}
